@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SFamilyONE · Feed (Supabase)</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="/assets/logo.png" alt="logo" />
+      <strong>SFamilyONE</strong>
+    </div>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/profile.html">Perfil</a>
+      <a href="/chat.html">Chat</a>
+    </nav>
+    <div>
+      <span id="user-name" class="badge">Invitado</span>
+      <button id="login-btn">Entrar con Google</button>
+      <button id="logout-btn">Salir</button>
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Crear publicación</h2>
+      <textarea id="post-text" rows="3" placeholder="¿Qué estás pensando?"></textarea>
+      <div class="flex">
+        <input id="post-file" type="file" accept="image/*" />
+        <button id="post-btn">Publicar</button>
+      </div>
+      <p class="notice">Las imágenes se guardan en Supabase Storage. El feed actualiza en tiempo real.</p>
+    </div>
+    <div id="feed-list"></div>
+    <div class="notice">Hecho con ❤️ para Juan · Supabase MVP</div>
+  </main>
+  <script type="module" src="/js/feed.js"></script>
+</body>
+</html>

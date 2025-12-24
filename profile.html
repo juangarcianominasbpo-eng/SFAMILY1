@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SFamilyONE · Perfil</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="/assets/logo.png" alt="logo" />
+      <strong>SFamilyONE</strong>
+    </div>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/profile.html">Perfil</a>
+      <a href="/chat.html">Chat</a>
+    </nav>
+    <div>
+      <span id="user-name" class="badge">Invitado</span>
+      <button id="login-btn">Entrar con Google</button>
+      <button id="logout-btn">Salir</button>
+    </div>
+  </header>
+  <main>
+    <div class="audio-banner">
+      <audio id="profile-audio" src="" preload="auto" controls></audio>
+      <button id="play">Reproducir</button>
+      <button id="unmute" style="display:none">Quitar silencio</button>
+      <span id="autoplay-status" class="notice">Intento de auto-reproducción al abrir tu perfil.</span>
+    </div>
+    <div class="card">
+      <h2>Tu perfil</h2>
+      <label>URL de tu canción (mp3/wav):</label>
+      <input id="song-url" type="url" placeholder="https://..." />
+      <label>Biografía:</label>
+      <textarea id="bio" rows="4" placeholder="Cuéntanos sobre ti"></textarea>
+      <button id="save-btn">Guardar cambios</button>
+      <p class="notice">Por políticas del navegador, el autoplay con sonido puede requerir interacción.</p>
+    </div>
+  </main>
+  <script type="module" src="/js/profile.js"></script>
+</body>
+</html>

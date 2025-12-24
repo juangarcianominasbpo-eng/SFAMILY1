@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SFamilyONE · Chat</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="/assets/logo.png" alt="logo" />
+      <strong>SFamilyONE</strong>
+    </div>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/profile.html">Perfil</a>
+      <a href="/chat.html">Chat</a>
+    </nav>
+    <div>
+      <span id="user-name" class="badge">Invitado</span>
+      <button id="login-btn">Entrar con Google</button>
+      <button id="logout-btn">Salir</button>
+    </div>
+  </header>
+  <main>
+    <div id="chat-list"></div>
+    <div class="card">
+      <div class="flex">
+        <input id="msg" type="text" placeholder="Escribe un mensaje" />
+        <button id="send">Enviar</button>
+      </div>
+      <p class="notice">Chat global en tiempo real (Supabase Realtime).</p>
+    </div>
+  </main>
+  <script type="module" src="/js/chat.js"></script>
+</body>
+</html>
